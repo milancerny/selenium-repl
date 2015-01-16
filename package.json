@@ -2,10 +2,11 @@
 	"name": "node-boilerplate",
 	"version": "0.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "src/index.js",
 	"scripts": {
 		"test": "mocha",
-		"lint": "jshint ./"
+		"lint": "jshint src test",
+		"plato": "plato -r -d test_reports/plato -l .jshintrc src "
 	},
 	"repository": {
 		"type": "git",

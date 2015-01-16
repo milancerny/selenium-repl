@@ -11,7 +11,7 @@ Tools:
 - tests - including selected test runner and libs 
 - lints and other code quality tools
 - unobtrusive - tools are installed as devDependencies, not --global and used with `npm run` scripts
-
+- security checks - of own code and dependencies as well
 
 Libraries:
 
@@ -24,8 +24,10 @@ You can do the following:
 
 Run Lints and Code Analysis 
 
+	npm run mocha
 	npm run lint
 	npm run plato
+	npm run nsp
 
 Run tests
 
@@ -64,6 +66,10 @@ Useful commands used when creating this boilerplate, and few notes:
 	echo "test_reports/" 	>> .gitignore
 	echo "test_reports/" 	>> .jshintignore
 
+	# nodesecurityproject
+	npm install --save-dev nsp
+	echo "npm-shrinkwrap.json" 	>> .gitignore
+
 	# tests
 
 	npm install --save-dev mocha
@@ -87,10 +93,11 @@ Useful commands used when creating this boilerplate, and few notes:
 
 This is summary of top level modules included in dependencies and devDependencies used by this boilerplate
 
+
 |name|version|description|path|
 |----|-------|-----------|----|
 |[bluebird](https://github.com/petkaantonov/bluebird)|2.7.1|Full featured Promises/A+ implementation with exceptionally good performance|./node_modules/bluebird/package.json|
 |[jshint](http://jshint.com/)|2.5.11|Static analysis tool for JavaScript|./node_modules/jshint/package.json|
-|[loadtest](https://github.com/alexfernandez/loadtest)|1.2.6|Run load tests for your web application. Mostly ab-compatible interface, with an option to force requests per second. Includes an API for automated load testing.|./node_modules/loadtest/package.json|
 |[mocha]()|2.1.0|simple, flexible, fun test framework|./node_modules/mocha/package.json|
+|[nsp](https://nodesecurity.io)|0.5.2|Node Security Project command line tool|./node_modules/nsp/package.json|
 |[plato](https://github.com/es-analysis/plato)|1.3.0|JavaScript source analysis and visualizer|./node_modules/plato/package.json|

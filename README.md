@@ -14,6 +14,13 @@ You can do the following:
 	npm run lint
 	npm test
 
+	# with npm 2.0 you can also run tests (and any other scripts) 
+	# with ad-hoc params, e.g changing reporter of test on CLI, 
+	# without touching package.json scripts or mocha.opts
+
+	npm run test -- -R dot
+
+
 ## Notes 
 
 Useful commands used when creating this boilerplate, and few notes:
@@ -37,3 +44,12 @@ Useful commands used when creating this boilerplate, and few notes:
 
 	touch .gitignore
 	echo "node_modules" >> .gitignore
+
+
+	# you may also want this:
+
+	# as assert library for tests
+	npm install --save-dev chai-as-promised
+
+	# for load tests
+	npm install --save-dev loadtest

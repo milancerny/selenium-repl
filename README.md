@@ -87,13 +87,10 @@ Useful commands used when creating this boilerplate, and few notes:
 
 This is summary of top level modules included in dependencies and devDependencies used by this boilerplate
 
-|name|version|homepage|description|path|
-|----|-------|--------|-----------|----|
-|bluebird|2.7.1|https://github.com/petkaantonov/bluebird|Full featured Promises/A+ implementation with exceptionally good performance|./node_modules/bluebird/package.json|
-|jshint|2.5.11|http://jshint.com/|Static analysis tool for JavaScript|./node_modules/jshint/package.json|
-|loadtest|1.2.6|https://github.com/alexfernandez/loadtest|Run load tests for your web application. Mostly ab-compatible interface, with an option to force requests per second. Includes an API for automated load testing.|./node_modules/loadtest/package.json|
-|mocha|2.1.0||simple, flexible, fun test framework|./node_modules/mocha/package.json|
-|plato|1.3.0|https://github.com/es-analysis/plato|JavaScript source analysis and visualizer|./node_modules/plato/package.json|
-
-
-
+|name|version|description|path|
+|----|-------|-----------|----|
+|[bluebird](https://github.com/petkaantonov/bluebird)|2.7.1|Full featured Promises/A+ implementation with exceptionally good performance|./node_modules/bluebird/package.json|
+|[jshint](http://jshint.com/)|2.5.11|Static analysis tool for JavaScript|./node_modules/jshint/package.json|
+|[loadtest](https://github.com/alexfernandez/loadtest)|1.2.6|Run load tests for your web application. Mostly ab-compatible interface, with an option to force requests per second. Includes an API for automated load testing.|./node_modules/loadtest/package.json|
+|[mocha]()|2.1.0|simple, flexible, fun test framework|./node_modules/mocha/package.json|
+|[plato](https://github.com/es-analysis/plato)|1.3.0|JavaScript source analysis and visualizer|./node_modules/plato/package.json|
